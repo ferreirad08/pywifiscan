@@ -10,12 +10,12 @@ valid_interfaces = [
 
 
 def test_get_interface():
-    iface = getInterface()
+    iface = get_interface()
     assert isinstance(iface, str)
     assert iface in valid_interfaces
 
 
 def test_scan_networks():
-    iface = getInterface()
+    iface = get_interface()
     networks = scan_networks(iface)
     assert isinstance(iface, dict)
