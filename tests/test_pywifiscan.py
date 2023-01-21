@@ -18,4 +18,4 @@ def test_get_interface():
 def test_scan_networks():
     iface = get_interface()
     networks = scan_networks(iface)
-    assert isinstance(iface, dict)
+    assert isinstance(networks, dict)
